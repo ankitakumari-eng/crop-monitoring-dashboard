@@ -1,49 +1,81 @@
-# 🌾 ISRO Crop Monitoring Dashboard
+# ISRO Crop Monitoring Dashboard
 
-AI-powered satellite monitoring system for crop health and irrigation management in Odisha.
+## Overview
+Frontend dashboard for satellite-based crop monitoring in Odisha region using Sentinel-1 and Sentinel-2 data.
 
-## 🚀 Features
+## Tech Stack
+- **Frontend**: Vue.js 3 + Vite
+- **State Management**: Pinia
+- **Routing**: Vue Router
+- **Styling**: Tailwind CSS
+- **Charts**: Chart.js
+- **Maps**: Leaflet
+- **Package Manager**: npm
 
-- 📊 Real-time crop health monitoring using satellite data (NDVI, NDWI, EVI)
-- 💧 Soil moisture analysis and irrigation recommendations
-- ⚠️ Automated alerts for crop stress and pest risks
-- 📱 SMS advisory delivery to farmers
-- 📈 Historical trend analysis and yield predictions
-- 🗺️ Interactive field mapping and visualization
+## Features
+✅ Dashboard with statistics
+✅ Field monitoring
+✅ Alert management
+✅ Farmer profile
+✅ Responsive design
+✅ Mock data integration
+✅ Ready for backend API integration
 
-## 🛠️ Tech Stack
+## Project Structure
+src/
 
-- **Frontend:** Vue.js 3 + Vite
-- **Styling:** Tailwind CSS
-- **State Management:** Pinia
-- **Charts:** Chart.js
-- **Maps:** Leaflet
-- **HTTP Client:** Axios
+├── pages/           # Vue pages
+│   ├── Dashboard.vue
+│   ├── FieldDetail.vue
+│   ├── AlertsPage.vue
+│   ├── FarmerProfile.vue
+│   └── NotFound.vue
+├── stores/          # Pinia stores
+│   ├── fieldStore.js
+│   ├── alertStore.js
+│   └── userStore.js
+├── data/            # Mock data
+│   ├── mockFields.js
+│   ├── mockFarmers.js
+│   └── mockAlerts.js
+├── assets/          # CSS & static files
+├── App.vue          # Root component
+├── main.js          # Entry point
+└── router.js        # Route config
 
-## 📦 Installation
 
+## Installation
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/crop-monitoring-dashboard
-
-# Install dependencies
 npm install
-
-# Install Tailwind
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-
-# Start development server
 npm run dev
 ```
 
-## 🔧 Configuration
-
-Create a `.env` file based on `.env.example`:
-
-```env
-VITE_API_URL=http://localhost:8000/api
-VITE_ENABLE_MOCK_DATA=true
+## Build
+```bash
+npm run build
 ```
 
-## 📁 Project Structure
+## Deployment
+Deploy to Vercel/Netlify:
+```bash
+npm run build
+# Upload 'dist' folder
+```
+
+## Backend Integration
+This frontend is ready for API integration once backend APIs are available:
+- GET /api/fields
+- GET /api/alerts
+- POST /api/sms
+- etc.
+
+## Team
+- **Frontend**: Ankita Singh
+- **Backend**: [Team Member Names]
+- **ML/Data**: [Team Member Names]
+
+## License
+MIT
+
+## For Hackathon
+CodeUdaan / Bharatiya Antariksh Hackathon 2026
