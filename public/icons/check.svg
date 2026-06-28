@@ -1,0 +1,14 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#16a34a" opacity="0.2" stroke="#16a34a" stroke-width="2"/>
+  
+  <!-- Checkmark -->
+  <g transform="translate(32, 32)">
+    <path d="M -8 0 L -2 6 L 8 -4" 
+          stroke="#16a34a" 
+          stroke-width="3" 
+          fill="none" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+</svg>

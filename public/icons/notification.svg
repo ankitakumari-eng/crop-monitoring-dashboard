@@ -1,0 +1,26 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#ea580c" opacity="0.2" stroke="#ea580c" stroke-width="2"/>
+  
+  <!-- Bell icon -->
+  <g transform="translate(32, 32)">
+    <!-- Bell shape -->
+    <path d="M -6 -4 Q -8 -2 -8 2 Q -8 6 -4 8 L 4 8 Q 8 6 8 2 Q 8 -2 6 -4 Z" 
+          fill="none" 
+          stroke="#ea580c" 
+          stroke-width="2" 
+          stroke-linejoin="round"/>
+    
+    <!-- Clapper (inside) -->
+    <line x1="-6" y1="2" x2="6" y2="2" 
+          stroke="#ea580c" 
+          stroke-width="1.5"/>
+    
+    <!-- Bottom knob -->
+    <rect x="-2" y="8" width="4" height="3" 
+          fill="none" 
+          stroke="#ea580c" 
+          stroke-width="1.5"
+          rx="1"/>
+  </g>
+</svg>
